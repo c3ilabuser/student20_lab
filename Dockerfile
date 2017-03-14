@@ -5,7 +5,7 @@ WORKDIR /var/www/html
 
 ADD package.json /var/www/html
 
-RUN apk add --update nodejs && npm install
+RUN apk add --update nodejs nodejs-npm && npm install
 
 ADD Caddyfile /etc/Caddyfile
 
